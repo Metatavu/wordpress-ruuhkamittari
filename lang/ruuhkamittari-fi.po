@@ -1,0 +1,42 @@
+# Copyright (C) 2018 Ruuhkamittari
+# This file is distributed under the same license as the Ruuhkamittari package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Ruuhkamittari 0.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wordpress-"
+"ruuhkamittari\n"
+"POT-Creation-Date: 2018-09-13 07:12:41+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-09-13 10:14+0300\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.1.1\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: fi_FI\n"
+
+#: emergency-congestion-status/emergency-congestion-status-ui.php:37
+#: emergency-congestion-status/emergency-congestion-status-ui.php:38
+#: emergency-congestion-status/emergency-congestion-status-ui.php:45
+#: emergency-congestion-status/emergency-congestion-status-ui.php:46
+#: emergency-congestion-status/emergency-congestion-status-ui.php:47
+#: emergency-congestion-status/emergency-congestion-status-ui.php:59
+msgid "Emergency congestion status"
+msgstr "Ruuhkatilanne"
+
+#: emergency-congestion-status/emergency-congestion-status-ui.php:65
+msgid "Save"
+msgstr "Tallenna"
+
+#. Plugin Name of the plugin/theme
+msgid "Ruuhkamittari"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Wordpress plugin for changing status of emergency congestion"
+msgstr "Wordpress plugin ruuhkatilanteen päivittämiseen"
+
+#. Author of the plugin/theme
+msgid "Metatavu Oy"
+msgstr ""
