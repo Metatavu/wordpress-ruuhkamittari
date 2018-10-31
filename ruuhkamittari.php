@@ -3,7 +3,7 @@
  * Created on Aug 29, 2018
  * Plugin Name: Ruuhkamittari
  * Description: Wordpress plugin for changing status of emergency congestion
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Metatavu Oy
  */
 
