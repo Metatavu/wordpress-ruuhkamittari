@@ -36,7 +36,7 @@
         add_menu_page(
           __('Emergency congestion status', 'ruuhkamittari'), 
           __('Emergency congestion status', 'ruuhkamittari'), 
-          'manage_options', 'emergency-congestion-status.php', 
+          'manage_emergency_congestion_status', 'emergency-congestion-status.php', 
           '', 
           'dashicons-calendar-alt', 
           50
@@ -45,7 +45,7 @@
           __('Emergency congestion status', 'ruuhkamittari'), 
           __('Emergency congestion status', 'ruuhkamittari'), 
           __('Emergency congestion status', 'ruuhkamittari'), 
-          'manage_options', 
+          'manage_emergency_congestion_status', 
           'emergency-congestion-status.php', 
           [$this, 'renderEmergencyCongestionStatus']
         );
@@ -54,16 +54,22 @@
       /**
        * Renders HTML elements for emergency congestion status
        */
-      public function renderEmergencyCongestionStatus () {
+      public function renderEmergencyCongestionStatus() {
         echo '<div class="slider-wrapper">';
         echo sprintf('<h1>%s</h1>', __('Emergency congestion status', 'ruuhkamittari'));
 
         echo '<div class="slidecontainer">';
-        echo sprintf('<input type="range" min="1" max="100" value="%s" class="slider" id="emergencyCongestionStatus">', $status);
+        echo sprintf('<input type="range" min="1" max="100" value="%s" class="slider" id="emergencyCongestionStatus">',  $this->loadEmergencyCongestionStatus());
         echo '</div>';
 
         echo sprintf('<button type="submit" id="saveEmergencyCongestionStatus">%s</button>', __('Save', 'ruuhkamittari'));
         echo '</div>';
+      }
+
+
+      private function loadEmergencyCongestionStatus() {
+        $status = get_option("emergency_congestion_status");
+        return $status && $status["value"] ? $status["value"] : 0;
       }
     }
   }
